@@ -1,5 +1,9 @@
 /** General **/
 
+@media (max-width: @screen-xs-max) {
+  body {font-size: 10px;}
+}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -28,8 +32,21 @@ hr {
 }
 
 h1, h2 {
-  text-align: center;
+  text-align: right;
   text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1em;
 }
 
 /* Header Specific */
@@ -46,9 +63,13 @@ header .row {
 /* Class Specific */
 
 .background {
-  height: auto;
+  height: 100%;
   width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.featured-work a {
+  word-wrap: break-word;
 }
